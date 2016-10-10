@@ -27,7 +27,20 @@ GLUON_SITE_PACKAGES := \
         iptables \
         haveged
 
-DEFAULT_GLUON_RELEASE := 0.8.3
+ifeq ($(GLUON_TARGET),x86-64)
+# support the usb stack on x86 devices
+# and add a few common USB NICs
+GLUON_SITE_PACKAGES += \
+	kmod-usb-core \
+	kmod-usb2 \
+	kmod-usb-hid \
+	kmod-usb-net \
+	kmod-usb-net-asix \
+	kmod-usb-net-dm9601-ether \
+	kmod-r8169
+endif
+
+DEFAULT_GLUON_RELEASE := 0.8.2
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
