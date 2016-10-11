@@ -21,11 +21,14 @@ GLUON_SITE_PACKAGES := \
         gluon-mesh-vpn-fastd \
         gluon-radvd \
         gluon-respondd \
+	ffe-autoupdater-wifi-fallback\
         gluon-setup-mode \
         gluon-status-page \
         iwinfo \
         iptables \
         haveged
+	
+	
 
 ifeq ($(GLUON_TARGET),x86-64)
 # support the usb stack on x86 devices
