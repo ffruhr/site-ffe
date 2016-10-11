@@ -1,0 +1,5 @@
+GLUON_SITE_FEEDS='ffe'
+
+PACKAGES_FFE_REPO=https://github.com/CodeFetch/packages-1.git
+PACKAGES_FFE_BRANCH=master
+PACKAGES_FFE_COMMIT=c0b04d7cf20fe4cdfe91f23c30904da4e5d20366
