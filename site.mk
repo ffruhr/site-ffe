@@ -21,7 +21,7 @@ GLUON_SITE_PACKAGES := \
         gluon-mesh-vpn-fastd \
         gluon-radvd \
         gluon-respondd \
-	ffe-autoupdater-wifi-fallback\
+	ffe-autoupdater-wifi-fallback \
         gluon-setup-mode \
         gluon-status-page \
         iwinfo \
